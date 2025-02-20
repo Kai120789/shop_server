@@ -3,13 +3,13 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 @Table
 export class BoilerParts extends Model{
     @Column
-    boiler_manufactures: string;
+    boiler_manufacturer: string;
 
     @Column({ defaultValue: 0 })
     price: number;
 
     @Column
-    parts_manufactures: string;
+    parts_manufacturer: string;
 
     @Column
     vendor_code: string;
